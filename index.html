@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohid</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- webpage -->
+    <link rel="icon" href="./assets/WebPage Logo.png">
+
+    <!-- font-awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header start -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav_logo">
+                    <a href="#"><img src="./assets/Logo.png" alt=""></a>
+                </div>  
+
+                <i class="nav_menu" id="nav_menu">☰</i>
+
+                <ul class="navbar_collection">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#watches">Brands</a></li>
+                    <li><a href="#recent_products">Recent Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+
+                <ul class="navbar_collection_open" id="navbar_collection_open">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#watches">Brands</a></li>
+                    <li><a href="#recent_products">Recent Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+
+                <ul class="navbar_icons">
+                    <li>
+                        <img src="./assets/Search.png" alt="">
+                    </li>
+
+                    <li>
+                        <img src="./assets/Person.png" alt="">
+                    </li>
+
+                    <li id="nav_shop">
+                        <img src="./assets/Shopping Cart.png" alt="">
+                        <div id="sopping_cart" class="shopping_cart">
+
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+        <!-- hero start -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero_text">
+                    <h1>Discover <br> Most Suitable Watches</h1>
+                    <p>Find the best, reliable, and cheap smart watches here. We focus on product quality. Here you can find smart watches of almost all brands. So why you are waiting? Just order now!</p>
+
+
+                    <div class="hero_input">
+                        <form action="submit">
+                            <img src="./assets/Search_blue.png" alt="Search_blue" id="input_img">
+                            <input required type="text" placeholder="Find the best brands" name="input" id="hero_input">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="hero_img">
+                    <img src="./assets/hero_img.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- hero end -->
+
+        <!-- watches start -->
+        <section class="watches" id="watches">
+            <div class="container">
+                <div class="watches_cards">
+
+                    <div class="watch_card">
+
+                        <div class="watch_card_img">
+                            <img src="./assets/watch1.png" alt="">
+                        </div>
+
+                        <div class="watch_card_text">
+                            <h1>Apple</h1>
+                            <p>Apple is one of the most famous smart watches providing company.</p>
+                        </div>
+                    </div>
+
+                    <div class="watch_card">
+
+                        <div class="watch_card_img">
+                            <img src="./assets/watch2.png" alt="">
+                        </div>
+
+                        <div class="watch_card_text">
+                            <h1>Xiaomi</h1>
+                            <p>Xiaomi smart watches are produced by MI company.</p>
+                        </div>
+                    </div>
+
+                    <div class="watch_card">
+
+                        <div class="watch_card_img">
+                            <img src="./assets/watch3.png" alt="">
+                        </div>
+
+                        <div class="watch_card_text">
+                            <h1>FitBit</h1>
+                            <p>FitBit smart watches are best for there health and fitness features.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- watches end -->
+
+        <!-- Recent Products start -->
+        <section class="recent_products" id="recent_products">
+            <div class="container">
+                <p class="subtitle">Find your favourite smart watch.</p>
+                <h1 class="title">Our Latest Products</h1>
+
+                <div class="cards">
+
+                    <div class="card" data-id="1">
+                        <div class="card_img">
+                            <img src="./assets/card1.png" alt="card1">
+                            <div class="card_img_items">
+                                <button class="card_shop">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                                <button class="card_heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="card_text">
+                            <h1>Apple Smart I</h1>
+
+                            <div class="stars">OOOOO</div>
+
+                            <div class="card_price">
+                                <span id="not_price1" class="not_price"></span>
+                                <p id="price1" class="price"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-id="2">
+                        <div class="card_img">
+                            <img src="./assets/card2.png" alt="card1">
+                            <div class="card_img_items">
+                                <button class="card_shop">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                                <button class="card_heart" id="card_heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="card_text">
+                            <h1>Apple Smart II</h1>
+
+                            <div class="stars">OOOOO</div>
+
+                            <div class="card_price">
+                                <span id="not_price2" class="not_price"></span>
+                                <p id="price2" class="price"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-id="3">
+                        <div class="card_img">
+                            <img src="./assets/card3.png" alt="card1">
+                            <div class="card_img_items">
+                                <button class="card_shop">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                                <button class="card_heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="card_text">
+                            <h1>Apple Smart III</h1>
+
+                            <div class="stars">OOOOO</div>
+
+                            <div class="card_price">
+                                <span id="not_price3" class="not_price"></span>
+                                <p id="price3" class="price"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-id="4">
+                        <div class="card_img">
+                            <img src="./assets/card4.png" alt="card1">
+                            <div class="card_img_items">
+                                <button class="card_shop">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                                <button class="card_heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="card_text">
+                            <h1>Apple Smart IV</h1>
+
+                            <div class="stars">OOOOO</div>
+
+                            <div class="card_price">
+                                <span id="not_price4" class="not_price"></span>
+                                <p id="price4" class="price"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-id="5">
+                        <div class="card_img">
+                            <img src="./assets/card5.png" alt="card1">
+                            <div class="card_img_items">
+                                <button class="card_shop">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                                <button class="card_heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="card_text">
+                            <h1>Samsung Watch Pro</h1>
+
+                            <div class="stars">OOOOO</div>
+
+                            <div class="card_price">
+                                <span id="not_price5" class="not_price"></span>
+                                <p id="price5" class="price"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" data-id="6">
+                        <div class="card_img">
+                            <img src="./assets/card6.png" alt="card1">
+                            <div class="card_img_items">
+                                <button class="card_shop">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                                <button class="card_heart"></button>
+                            </div>
+                        </div>
+
+                        <div class="card_text">
+                            <h1>Fitbit Max 1</h1>
+
+                            <div class="stars">OOOOO</div>
+
+                            <div class="card_price">
+                                <span id="not_price6" class="not_price"></span>
+                                <p id="price6" class="price"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="view_more_btn">View More</button>
+            </div>
+        </section>
+        <!-- Recent Products end -->
+
+        <!-- About Us start -->
+        <section class="about" id="about">
+            <div class="container">
+                <p class="subtitle">Here are our some of the best clients.</p>
+                <h1 class="title">What People Say About Us</h1>
+
+                <div class="carousel_wrapper">
+                    <div class="carousel" id="carousel">
+
+                        <div class="carousel_item" id="carousel_item1">
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hamza_faizi.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hamza Faizi</h1>
+                                    <p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hafiz_huzaifa.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hafiz Huzaifa</h1>
+                                    <p>I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel_item" id="carousel_item2">
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hamza_faizi.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hamza Faizi</h1>
+                                    <p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hafiz_huzaifa.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hafiz Huzaifa</h1>
+                                    <p>I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel_item" id="carousel_item3">
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hamza_faizi.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hamza Faizi</h1>
+                                    <p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hafiz_huzaifa.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hafiz Huzaifa</h1>
+                                    <p>I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel_item" id="carousel_item4">
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hamza_faizi.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hamza Faizi</h1>
+                                    <p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hafiz_huzaifa.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hafiz Huzaifa</h1>
+                                    <p>I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carousel_item" id="carousel_item5">
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hamza_faizi.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hamza Faizi</h1>
+                                    <p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel_card">
+
+                                <div class="carousel_img">
+                                    <img src="./assets/hafiz_huzaifa.png" alt="">
+                                </div>
+
+                                <div class="carousel_text">
+                                    <h1>Hafiz Huzaifa</h1>
+                                    <p>I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.</p>
+
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                    <div class="carousel_control">
+                        <button id="carousel1"></button>
+                        <button id="carousel2"></button>
+                        <button id="carousel3"></button>
+                        <button id="carousel4"></button>
+                        <button id="carousel5"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us end -->
+
+        <!-- Contact start -->
+        <section class="contact" id="contact">
+            <div class="container">
+
+                <div class="contact_wrapper">
+
+                    <div class="contact_text">
+                        <h1>Subscribe To Newsletter</h1>
+                        <p>Get free guide about smart watches daily.</p>
+
+                        <div class="contact_input">
+                            <form action="subscribe">
+                                <input required type="email" placeholder="Enter Email Address" name="input" id="hero_input">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="contact_img">
+                        <img src="./assets/card1.png" alt="">
+                    </div>
+
+                </div>
+            
+            </div>
+        </section>
+        <!-- Contact end -->
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            <p>Copyright @ 2022 | Mohid</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- shop start -->
+    <div class="shop_page" id="shop_page">
+        <div class="container">
+            <p class="subtitle">The product you want to buy</p>
+            <h1 class="title">Basket</h1>
+
+            <span id="close_shop">✕</span>
+
+            <div class="cards" id="shop_cards">
+
+                <div class="card" id="shop_card1">
+                    <div class="card_img">
+                        <img src="./assets/card1.png" alt="card1">
+                        <div class="card_img_items">
+                            <button class="card_shop"></button>
+                            <button class="card_heart"></button>
+                        </div>
+                    </div>
+
+                    <div class="card_text">
+                        <h1>Apple Smart I</h1>
+
+                        <div class="stars">OOOOO</div>
+
+                        <div class="card_price">
+                            <span id="sh_not_price1" class="not_price"></span>
+                            <p id="sh_price1" class="price"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="shop_card2">
+                    <div class="card_img">
+                        <img src="./assets/card2.png" alt="card1">
+                        <div class="card_img_items">
+                            <button class="card_shop"></button>
+                            <button class="card_heart"></button>
+                        </div>
+                    </div>
+
+                    <div class="card_text">
+                        <h1>Apple Smart II</h1>
+
+                        <div class="stars">OOOOO</div>
+
+                        <div class="card_price">
+                            <span id="sh_not_price2" class="not_price"></span>
+                            <p id="sh_price2" class="price"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="shop_card3">
+                    <div class="card_img">
+                        <img src="./assets/card3.png" alt="card1">
+                        <div class="card_img_items">
+                            <button class="card_shop"></button>
+                            <button class="card_heart"></button>
+                        </div>
+                    </div>
+
+                    <div class="card_text">
+                        <h1>Apple Smart III</h1>
+
+                        <div class="stars">OOOOO</div>
+
+                        <div class="card_price">
+                            <span id="sh_not_price3" class="not_price"></span>
+                            <p id="sh_price3" class="price"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="shop_card4">
+                    <div class="card_img">
+                        <img src="./assets/card4.png" alt="card1">
+                        <div class="card_img_items">
+                            <button class="card_shop"></button>
+                            <button class="card_heart"></button>
+                        </div>
+                    </div>
+
+                    <div class="card_text">
+                        <h1>Apple Smart IV</h1>
+
+                        <div class="stars">OOOOO</div>
+
+                        <div class="card_price">
+                            <span id="sh_not_price4" class="not_price"></span>
+                            <p id="sh_price4" class="price"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="shop_card5">
+                    <div class="card_img">
+                        <img src="./assets/card5.png" alt="card1">
+                        <div class="card_img_items">
+                            <button class="card_shop"></button>
+                            <button class="card_heart"></button>
+                        </div>
+                    </div>
+
+                    <div class="card_text">
+                        <h1>Samsung Watch Pro</h1>
+
+                        <div class="stars">OOOOO</div>
+
+                        <div class="card_price">
+                            <span id="sh_not_price5" class="not_price"></span>
+                            <p id="sh_price5" class="price"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="shop_card6">
+                    <div class="card_img">
+                        <img src="./assets/card6.png" alt="card1">
+                        <div class="card_img_items">
+                            <button class="card_shop"></button>
+                            <button class="card_heart"></button>
+                        </div>
+                    </div>
+
+                    <div class="card_text">
+                        <h1>Fitbit Max 1</h1>
+
+                        <div class="stars">OOOOO</div>
+
+                        <div class="card_price">
+                            <span id="sh_not_price6" class="not_price"></span>
+                            <p id="sh_price6" class="price"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <h1 id="shop_total">$1000</h1>
+
+            <button class="shop_buy" id="shop_buy">Buy</button>
+        </div>
+    </div>
+    <!-- shop end -->
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
