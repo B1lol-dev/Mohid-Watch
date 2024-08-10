@@ -1,9 +1,22 @@
+/* fonts */
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.woff);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Regular.woff);
+}
+
 /* default start */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 html{
@@ -24,6 +37,7 @@ html{
 
 a{
     color: inherit;
+    font-family: inherit;
     text-decoration: inherit;
 }
 
@@ -294,12 +308,13 @@ header{
         color: var(--text-fr);
         font-weight: 700;
         font-size: 36px;
-
+        font-family: Inter;
     }
     & p{
         color: var(--text-pr);
         max-width: 173px;
         margin-top: 9px;
+        font-family: Inter;
     }
 }
 
